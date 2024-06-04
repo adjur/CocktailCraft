@@ -2,7 +2,9 @@ import React from 'react'
 
 const BuildBy = () => {
   return (
-    <div>BuildBy</div>
+    <section id='BuildBy'>
+
+    </section>
   )
 }
 

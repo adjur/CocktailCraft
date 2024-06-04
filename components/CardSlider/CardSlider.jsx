@@ -2,7 +2,9 @@ import React from 'react'
 
 const CardSlider = () => {
   return (
-    <div>CardSlider</div>
+   <section id='CardSlider'>
+
+   </section>
   )
 }
 

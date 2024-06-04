@@ -3,13 +3,13 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#D90429', // Customize the primary color
+      main: '#D90429', // Customize the primary colorrgb(43, 44, 66)
     },
     secondary: {
-      main: '#dc004e', // Customize the secondary color
+      main: '#bbab43', // Customize the secondary color
     },
     background: {
-      default: '#f5f5f5', // Customize the default background color
+      default: '#2B2D42', // Customize the default background color
     },
     text: {
       primary: '#333333', // Customize the primary text color
@@ -36,7 +36,9 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#333333', // Customize AppBar background color
+          backgroundColor: 'rgba(43, 45, 46, 0.5)',
+          backdropFilter: 'blur(10px)',
+          boxShadow: 'none'
         },
       },
     },
@@ -45,3 +47,5 @@ const theme = createTheme({
 });
 
 export default theme;
+
+//'rgba(25, 118, 210, 0.5)'
