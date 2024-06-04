@@ -18,6 +18,7 @@ const pages = [
   { name: 'Cocktail of the Day', link: '#Cod' },
   { name: 'Crowd Pleasers', link: '#CardSlider' },
   { name: 'Cocktail Packages', link: '#Packages' },
+  { name: 'Contact Us', link: '#Footer' },
 ];
 
 function ResponsiveAppBar() {
