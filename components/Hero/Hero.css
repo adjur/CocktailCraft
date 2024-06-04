@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .hero {
     height: 100vh;
     width: 100vw;
@@ -16,15 +22,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 49px;
     padding: 20px;
     z-index: 1;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1800px;
+    margin: 49px auto;
 }
 
-.layer1{
+.layer1 {
     background-color: rgba(187, 171, 67, 0.2);
     backdrop-filter: blur(4px);
     box-shadow: none;
@@ -43,11 +48,13 @@
     font-size: 2rem;
     font-weight: 600;
     font-family: monospace;
-    letter-spacing: .8rem;
-    line-height: normal;
+    letter-spacing: .6rem;
+    line-height: 3;
     color: #ffffff;
     text-align: center;
     z-index: 2;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
 }
 
 .bodyCard {
@@ -59,13 +66,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
     padding: 20px;
     z-index: 1;
-    height:50vh;
+    height: 50vh;
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1800px;
+    margin: 70px auto;
 
 }
 
@@ -82,4 +88,39 @@
     z-index: 1;
     height: 90%;
     width: 95%;
+}
+
+.intro {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: .2rem;
+    line-height: 3;
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: large;
+        letter-spacing: 0.5px;
+    }
+
+    .intro {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .bodyCard {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #title-div {
+        width: 90%;
+    }
 }
