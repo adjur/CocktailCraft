@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './Cod.css'
 
 const Cod = () => {
   return (
-    <div>Cod</div>
-  )
+    <section className='main'>
+      <div>Cod</div>
+    </section>
+  );
 }
 
-export default Cod
+export default Cod;

@@ -1,0 +1,85 @@
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2B2D42;
+    background-image: url('/cocktails.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#title-div {
+    background-color: rgba(43, 45, 46, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 49px;
+    padding: 20px;
+    z-index: 1;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.layer1{
+    background-color: rgba(187, 171, 67, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+    width: 95%;
+
+}
+
+#title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: .8rem;
+    line-height: normal;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+
+.bodyCard {
+    background-color: rgba(43, 45, 46, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    z-index: 1;
+    height:50vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.layer2 {
+    background-color: rgba(187, 171, 67, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+    height: 90%;
+    width: 95%;
+}

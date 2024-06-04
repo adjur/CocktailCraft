@@ -15,7 +15,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const pages = [
   { name: 'Build Your Own', link: '#BuildBy' },
-  { name: 'Cocktail of the Day', link: '#Cod' },
+  { name: 'Daily', link: '#Cod' },
   { name: 'Crowd Pleasers', link: '#CardSlider' },
   { name: 'Cocktail Packages', link: '#Packages' },
   { name: 'Contact Us', link: '#Footer' },

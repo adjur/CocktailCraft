@@ -16,20 +16,20 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Arial, Helvetica, sans-serif', // Customize the default font
+    fontFamily: 'monospace',
+    fontWeight: 'medium',
     h1: {
-      fontSize: '2.5rem', // Customize heading 1
+      fontSize: '3rem',
     },
     h2: {
-      fontSize: '2rem', // Customize heading 2
+      fontSize: '2.5rem',
     },
-    // Add more typography customization here
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: '8px', // Customize button border radius
+          borderRadius: '8px',
         },
       },
     },
@@ -37,7 +37,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: 'rgba(43, 45, 46, 0.5)',
-          backdropFilter: 'blur(10px)',
+          backdropFilter: 'blur(5px)',
           boxShadow: 'none'
         },
       },

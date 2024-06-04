@@ -1,10 +1,15 @@
 import React from 'react'
+import './CardSlider.css'
 
 const CardSlider = () => {
   return (
-   <section id='CardSlider'>
+    <section id='CardSlider' className='cardSlider'>
+      <div className='main'>
+        <div className='body'>
 
-   </section>
+        </div>
+      </div>
+    </section>
   )
 }
 

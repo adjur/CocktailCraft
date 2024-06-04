@@ -1,0 +1,21 @@
+.cardSlider {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2B2D42;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    
+}
+
+.body {
+    background-color: #8D99AE;
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    align-self: center;
+
+
+}
