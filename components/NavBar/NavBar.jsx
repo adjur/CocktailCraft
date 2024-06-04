@@ -13,26 +13,22 @@ import MenuItem from '@mui/material/MenuItem';
 import LocalBarIcon from '@mui/icons-material/LocalBar';
 import SearchIcon from '@mui/icons-material/Search';
 
-const pages = ['Build Your Own', 'Crowd Pleasers', 'Cocktail Packages'];
-
+const pages = [
+  { name: 'Build Your Own', link: '#BuildBy' },
+  { name: 'Cocktail of the Day', link: '#Cod' },
+  { name: 'Crowd Pleasers', link: '#CardSlider' },
+  { name: 'Cocktail Packages', link: '#Packages' },
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -88,9 +84,14 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={(e) => handleSmoothScroll(e, page.link)}>
+                  <Typography textAlign="center">
+                    <a href={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      {page.name}
+                    </a>
+                  </Typography>
                 </MenuItem>
+
               ))}
             </Menu>
           </Box>
@@ -112,14 +113,16 @@ function ResponsiveAppBar() {
             }}
           >
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'space-evenly'} }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', justifyContent: 'space-evenly' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.name}
+                onClick={(e) => handleSmoothScroll(e, page.link)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <a href={page.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  {page.name}
+                </a>
               </Button>
             ))}
           </Box>
@@ -129,35 +132,38 @@ function ResponsiveAppBar() {
               placeholder="Search for cocktails..."
               size="small"
               sx={{
-                bgcolor: '#EDF2F4',
-                color: '#2B2D42',
+                bgcolor: 'rgba(43, 45, 46, 0.5)',
+                color: '#ffffff',
                 '& input': {
-                  color: '#2B2D42',
+                  color: '#ffffff',
                 },
                 borderRadius: 1,
                 '& .MuiOutlinedInput-root': {
                   '& fieldset': {
-                    borderColor: '#2B2D42',
+                    borderStyle: 'no border'
                   },
                   '&:hover fieldset': {
-                    borderColor: '#3a3f55',
+                    borderStyle: 'no border',
+                    color: '#ffffff',
                   },
                   '&.Mui-focused fieldset': {
-                    borderColor: '#EDF2F4',
-                    borderWidth: '2px',
+                    borderStyle: 'no border',
+                    borderColor: 'rgba(43, 45, 46, 0.5)', // Ensuring specificity is high enough
+                    borderWidth: '1px',
+                    backgroundColor: 'rgba(43, 45, 46,)',
                   },
                   '&.Mui-focused': {
                     '& fieldset': {
-                      borderColor: '#EDF2F4', // Ensuring specificity is high enough
+                      borderColor: 'rgba(43, 45, 46, 0.5)', // Ensuring specificity is high enough
                       borderWidth: '2px',
+                      backgroundColor: 'rgba(43, 45, 46,)',
+                      color: '#ffffff',
                     }
                   }
                 }
               }}
             />
           </Box>
-
-
         </Toolbar>
       </Container>
     </AppBar>
