@@ -1,5 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .buildby {
     height: 100vh;
     width: 100vw;
     background-color: #2B2D42;
+}
+
+#title-div {
+    background-color: rgba(43, 45, 46, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+    width: 80%;
+    max-width: 1800px;
+    margin: 49px auto;
+}
+
+.layer1 {
+    background-color: rgba(187, 171, 67, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+    width: 95%;
+
+}
+
+#title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: .6rem;
+    line-height: 3;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
 }

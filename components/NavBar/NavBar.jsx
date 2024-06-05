@@ -14,7 +14,7 @@ import LocalBarIcon from '@mui/icons-material/LocalBar';
 import SearchIcon from '@mui/icons-material/Search';
 
 const pages = [
-  { name: 'Build Your Own', link: '#BuildBy' },
+  { name: 'Mix Your Own', link: '#BuildBy' },
   { name: 'Daily Pick', link: '#Cod' },
   { name: 'Crowd Pleasers', link: '#CardSlider' },
   { name: 'Packages', link: '#Packages' },
