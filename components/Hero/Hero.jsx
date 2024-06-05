@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <section id='Hero' className='hero'>
       <NavBar />
-      <div id='title-div'>
+      <div id='titles-div'>
         <div className='layer1'>
-          <h1 id='title'>Welcome to Cocktail Craft</h1>
+          <h1 id='titles'>Welcome to Cocktail Craft</h1>
         </div>
       </div>
       <div className='cardBox'>

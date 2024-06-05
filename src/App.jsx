@@ -16,7 +16,7 @@ function App() {
       <Hero />
       <BuildBy />
       <Cod />
-      <CardSlider />
+      <CardSlider /> 
       <Packages />
       <Footer />
     </>

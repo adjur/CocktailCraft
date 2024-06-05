@@ -58,3 +58,49 @@
         transform: translateY(-10px);
     }
 }
+
+@media (max-width: 1000px) {
+    .arrowSection {
+        padding-bottom: 50px; /* Adjust padding to ensure the arrow stays in view */
+    }
+
+    .arrowContainer {
+        width: 80%; /* Make the container wider to accommodate the arrow */
+    }
+
+    .arrowIcon .icon {
+        font-size: 1.8rem;
+    }
+
+    .arrowIcon:hover .icon {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .arrowTitle {
+        font-size: 1.2rem;
+    }
+
+    .arrowIcon .icon {
+        font-size: 1.5rem;
+    }
+
+    .arrowIcon:hover .icon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .arrowTitle {
+        font-size: 1rem;
+    }
+
+    .arrowIcon .icon {
+        font-size: 1.2rem;
+    }
+
+    .arrowIcon:hover .icon {
+        font-size: 1.5rem;
+    }
+}
