@@ -93,15 +93,12 @@
     margin: 10px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
-    .cardBox {
-        /* Add styles if needed */
-    }
-
-    #title {
-        font-size: large;
-        letter-spacing: 0.5px;
+    #titles {
+        font-size: 1.5rem;
+        letter-spacing: 0.4rem;
+        line-height: 2.5;
     }
 
     .intro {
@@ -112,11 +109,35 @@
     .bodyCard {
         width: 90%;
         padding: 10px;
-        margin: ;
     }
 
-    #title-div {
+    #titles-div {
+        width: 80%;
+        padding: 10px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    #titles {
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+        line-height: 2;
+    }
+
+    .intro {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .bodyCard {
         width: 90%;
+        padding: 10px;
+    }
+
+    #titles-div {
+        width: 80%;
+        padding: 10px;
     }
 }
 
@@ -124,7 +145,7 @@
     #titles {
         font-size: 1.5rem;
         letter-spacing: 0.4rem;
-        line-height: 2.5;
+        line-height: 1.5;
     }
 
     .intro {
@@ -142,8 +163,38 @@
         width: 95%;
     }
 
-    .layer1, .layer2 {
+    .layer1,
+    .layer2 {
         width: 100%;
         padding: 15px;
+    }
+
+    @media (max-width: 380px) {
+        #titles {
+            font-size: 1rem;
+            letter-spacing: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .intro {
+            font-size: 0.9rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.2;
+        }
+
+        .bodyCard {
+            width: 95%;
+            padding: 10px;
+        }
+
+        #titles-div {
+            width: 95%;
+        }
+
+        .layer1,
+        .layer2 {
+            width: 100%;
+            padding: 5px;
+        }
     }
 }
