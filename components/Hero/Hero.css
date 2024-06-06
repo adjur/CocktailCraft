@@ -93,6 +93,15 @@
     margin: 10px 0;
 }
 
+.Hero-arrow-container {
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
 @media (max-width: 1000px) {
 
     #titles {

@@ -15,8 +15,8 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const pages = [
   { name: 'Mix Your Own', link: '#BuildBy' },
-  { name: 'Daily Pick', link: '#Cod' },
-  { name: 'Crowd Pleasers', link: '#CardSlider' },
+  { name: 'Explore', link: '#Cod' },
+  { name: 'Favorites', link: '#CardSlider' },
   { name: 'Packages', link: '#Packages' },
   { name: 'Contact', link: '#Footer' },
 ];

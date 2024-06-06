@@ -1,9 +1,13 @@
 .cod {
     height: 100vh;
     width: 100vw;
-    background-color: #2B2D42;
+    background-color: rgba(43, 45, 66, 1);
+    /* background-blend-mode: multiply; */
     display: flex;
     flex-direction: column;
+    /* background-image: url('/scales.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 .Cod-title-div {
@@ -52,19 +56,21 @@
     box-shadow: none;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    min-height: 400px;
     padding: 20px;
     height: auto;
     width: 80%;
     max-width: 1800px;
     margin: 20px auto;
+    gap: 10px;
 
 }
 
 .Cod-pictureBox {
-    width: 50%;   
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,7 +112,7 @@
     justify-content: space-around;
     padding-left: 20px;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 400;
     font-family: monospace;
     letter-spacing: .2rem;
     line-height: 2;
@@ -115,19 +121,61 @@
     /* border-top: 2px solid rgb(187, 171, 67);
     border-bottom: 2px solid rgb(187, 171, 67); */
     margin: 10px 0;
+    
 }
+
+.Cod-ingredients {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
 .Cod-instructions {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5;
     border-top: 2px solid rgb(187, 171, 67);
     border-bottom: 2px solid rgb(187, 171, 67);
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .Cod-button {
-    width: 50%;
-    display: ;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(187, 171, 67);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    width: 20%;
+    max-width: 300px;
+    margin: 0 auto;
 }
+
+.Cod-button:hover {
+    background-color: rgb(187, 171, 67, .7);
+}
+
+.Cod-button:active {
+    transform: translateY(2px);
+}
+
+
+.Cod-arrow-container {
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
 
 @media (max-width: 1000px) {
     .Cod-titles {
@@ -136,7 +184,8 @@
         line-height: 2.5;
     }
 
-    .Cod-intro {
+    .Cod-ingredients,
+    .Cod-instructions {
         font-size: 1rem;
         line-height: 1.5;
     }
@@ -153,18 +202,31 @@
 }
 
 @media (max-width: 768px) {
+
+    .Cod-layer2 {
+        flex-direction: column;
+    }
+
+    .Cod-layer2>* {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .Cod-titles {
         font-size: 1.5rem;
         letter-spacing: 0.4rem;
         line-height: 2;
     }
 
-    .Cod-intro {
-        font-size: 1rem;
+    .Cod-ingredients,
+    .Cod-instructions {
+        font-size: .9rem;
         line-height: 1.5;
+        text-align: center;
     }
 
     .Cod-bodyCard {
+        flex-direction: column;
         width: 90%;
         padding: 10px;
     }
@@ -174,13 +236,19 @@
         padding: 10px;
     }
 
-    .Cod-pictureBox img {
-        width: 120px;
-        /* Smaller image for smaller screens */
-    }
-
     .Cod-name {
         font-size: 1rem;
+        text-align: center;
+    }
+
+    .Cod-button {
+        width: 40%;
+        max-width: none;
+    }
+
+    .Cod-pictureBox img {
+        width: 100%;
+        max-width: 450px;
     }
 }
 
@@ -191,13 +259,15 @@
         line-height: 1.5;
     }
 
-    .Cod-intro {
+    .Cod-ingredients,
+    .Cod-instructions {
         font-size: 0.9rem;
         letter-spacing: 0.1rem;
         line-height: 1.2;
     }
 
     .Cod-bodyCard {
+        flex-direction: column;
         width: 95%;
         padding: 10px;
     }
@@ -213,11 +283,15 @@
     }
 
     .Cod-pictureBox img {
-        width: 100px;
-        /* Even smaller image for very small screens */
+        width: 100%;
     }
 
     .Cod-name {
         font-size: 0.8rem;
+    }
+
+    .Cod-button {
+        width: 40%;
+        max-width: none;
     }
 }

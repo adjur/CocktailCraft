@@ -25,7 +25,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className='Hero-arrow-container'>
       <Arrow title='Get Mixing!' link='#BuildBy'/>
+      </div>
     </section>
   );
 }
