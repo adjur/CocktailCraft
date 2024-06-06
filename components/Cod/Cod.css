@@ -1,11 +1,223 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .cod {
     height: 100vh;
     width: 100vw;
     background-color: #2B2D42;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cod-title-div {
+    background-color: rgba(43, 45, 46, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 80%;
+    max-width: 1800px;
+    margin: 20px auto;
+}
+
+.Cod-layer1 {
+    background-color: rgba(187, 171, 67, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 95%;
+}
+
+.Cod-titles {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: 0.6rem;
+    line-height: 3;
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
+}
+
+.Cod-bodyCard {
+    background-color: rgba(43, 45, 46, 0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    width: 80%;
+    max-width: 1800px;
+    margin: 20px auto;
+
+}
+
+.Cod-pictureBox {
+    width: 50%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cod-pictureBox img {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Cod-layer2 {
+    background-color: rgba(187, 171, 67, 0.2);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.Cod-name {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
+
+}
+
+.Cod-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: .2rem;
+    line-height: 2;
+    color: #ffffff;
+    text-align: center;
+    /* border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67); */
+    margin: 10px 0;
+}
+.Cod-instructions {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
+}
+
+.Cod-button {
+    width: 50%;
+    display: ;
+}
+
+@media (max-width: 1000px) {
+    .Cod-titles {
+        font-size: 1.5rem;
+        letter-spacing: 0.4rem;
+        line-height: 2.5;
+    }
+
+    .Cod-intro {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .Cod-bodyCard {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Cod-title-div {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Cod-titles {
+        font-size: 1.5rem;
+        letter-spacing: 0.4rem;
+        line-height: 2;
+    }
+
+    .Cod-intro {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .Cod-bodyCard {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Cod-title-div {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .Cod-pictureBox img {
+        width: 120px;
+        /* Smaller image for smaller screens */
+    }
+
+    .Cod-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Cod-titles {
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+        line-height: 1.5;
+    }
+
+    .Cod-intro {
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.2;
+    }
+
+    .Cod-bodyCard {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .Cod-title-div {
+        width: 95%;
+    }
+
+    .Cod-layer1,
+    .Cod-layer2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Cod-pictureBox img {
+        width: 100px;
+        /* Even smaller image for very small screens */
+    }
+
+    .Cod-name {
+        font-size: 0.8rem;
+    }
 }
