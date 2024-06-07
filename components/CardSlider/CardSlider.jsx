@@ -32,7 +32,7 @@ const CardSlider = () => {
           <div className='scrollCard'>
             <div className='drink-name'>Gin And Tonic</div>
             <img src='{image}' className='cardImage'></img>
-            </div>
+          </div>
           <div className='scrollCard'><img src='{image}' className='cardImage'></img></div>
           <div className='scrollCard'><img src='{image}' className='cardImage'></img></div>
           <div className='scrollCard'><img src='https://www.thecocktaildb.com/images/media/drink/k0508k1668422436.jpg' className='cardImage'></img></div>

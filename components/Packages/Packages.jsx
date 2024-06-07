@@ -27,7 +27,7 @@ const Packages = () => {
               <li>◌ Fresh fruit for garnishing ◌</li>
               <li>◌ Easy-to-follow recipe cards for a selection of cocktails ◌</li>
             </ul>
-            <p className='pack-description'>$000.00</p>
+            <p className='pack-description'>$60.00</p>
             <a href="#" className="pack-button">Buy Package</a>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Packages = () => {
               <li>◌ A generous selection of fresh fruit ◌</li>
               <li>◌ Additional recipe cards featuring more cocktail options ◌</li>
             </ul>
-            <p className='pack-description'>$000.00</p>
+            <p className='pack-description'>$80.00</p>
             <a href="#" className="pack-button">Buy Package</a>
           </div>
         </div>
@@ -53,7 +53,7 @@ const Packages = () => {
               <li>◌ A plentiful supply of fresh fruit ◌</li>
               <li>◌ An extensive collection of recipe cards for a wide variety of cocktails ◌</li>
             </ul>
-            <p className='pack-description'>$000.00</p>
+            <p className='pack-description'>$120.00</p>
             <a href="#" className="pack-button">Buy Package</a>
           </div>
         </div>
