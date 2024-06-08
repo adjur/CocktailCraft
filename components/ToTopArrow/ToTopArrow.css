@@ -2,59 +2,62 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-bottom: 50px;
-    /* Add padding to ensure the arrow isn't cut off */
-    overflow: hidden
-}
-
-.arrowContainer {
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .arrowContainer {
+    display: flex;
+    align-items: center;
+    background-color: rgba(43, 45, 66, 0.7);
+    border-radius: 10px;
+    padding: 15px; /* Increased padding */
+    transition: background-color 0.3s;
+  }
+  
+  .arrowContainer:hover {
+    background-color: rgba(43, 45, 66, 0.9);
+  }
+  
+  .arrowIcon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    width: fit-content;
-}
-
-.arrowTitle {
-    margin-bottom: 20px;
-    font-family: monospace;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-}
-
-.arrowIcon {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.arrowIcon .icon {
-    font-size: 2rem;
-    animation: moveUpDown 2s infinite;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, font-size 0.3s ease;
-}
-
-.arrowIcon:hover .icon {
-    transform: translateY(10px);
-    font-size: 3rem;
-}
-
-@keyframes moveUpDown {
-
-    0%,
-    100% {
-        transform: translateY(0);
+  }
+  
+  .icon {
+    font-size: 4rem; /* Increased icon size */
+  }
+  
+  .arrowLabel {
+    font-size: 1.25rem; /* Increased label size */
+    color: #ffffff;
+    margin-top: 5px;
+    font-family: monospace;
+  }
+  
+  @media (max-width: 768px) {
+    .icon {
+      font-size: 2.5rem; /* Adjusted icon size for smaller screens */
     }
-
-    50% {
-        transform: translateY(-10px);
+  
+    .arrowLabel {
+      font-size: 1rem; /* Adjusted label size for smaller screens */
     }
-}
+  }
+  
+  @media (max-width: 576px) {
+    .icon {
+      font-size: 2rem; /* Adjusted icon size for smallest screens */
+    }
+  
+    .arrowLabel {
+      font-size: 0.85rem; /* Adjusted label size for smallest screens */
+    }
+  }
+  

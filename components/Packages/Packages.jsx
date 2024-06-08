@@ -1,5 +1,6 @@
 import React from 'react';
 import './Packages.css';
+import ToTopArrow from '../ToTopArrow/ToTopArrow';
 
 const Packages = () => {
   return (
@@ -57,6 +58,9 @@ const Packages = () => {
             <a href="#" className="pack-button">Buy Package</a>
           </div>
         </div>
+      </div>
+      <div>
+        <ToTopArrow />
       </div>
     </section>
   );

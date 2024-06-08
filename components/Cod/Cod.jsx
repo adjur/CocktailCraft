@@ -86,8 +86,7 @@ const Cod = () => {
         </div>
       </div>
       <button className='Cod-button' onClick={fetchCocktail}>Find Another</button>
-      <div className='Cod-arrow-container'>
-      </div>
+      <div className='Cod-arrow-container'></div>
     </section>
   );
 }
