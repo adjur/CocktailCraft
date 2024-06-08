@@ -1,7 +1,6 @@
 import React from 'react'
 import './Hero.css'
 import NavBar from '../NavBar/NavBar'
-import Arrow from '../Arrow/Arrow';
 
 const Hero = () => {
   return (
@@ -26,7 +25,6 @@ const Hero = () => {
         </div>
       </div>
       <div className='Hero-arrow-container'>
-      <Arrow title='Get Mixing!' link='#BuildBy'/>
       </div>
     </section>
   );

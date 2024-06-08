@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './BuildBy.css';
-import Arrow from '../Arrow/Arrow';
 // const ingredientSearch = `www.thecocktaildb.com/api/json/v1/1/filter.php?i=${}`
 
 const BuildBy = () => {
@@ -69,7 +68,6 @@ const BuildBy = () => {
           )}
         </div>
       </div>
-      {/* <Arrow title='Keep Mixing' link='#CardSlider'/> */}
     </section>
   );
 };

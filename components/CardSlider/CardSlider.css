@@ -2,7 +2,6 @@
     height: 100vh;
     width: 100vw;
     background-color: #2b2d42;
-    border: 2px solid aqua;
     overflow-y: auto;
 }
 
@@ -111,7 +110,6 @@
     color: #bbbbbb;
 }
 
-
 .scrollCard {
     flex: 0 0 auto;
     width: 350px;
@@ -173,13 +171,14 @@
     transform: rotateY(180deg);
 }
 
-
 .cardImage {
-    width: 90%;
-    height: 70%;
-    /* Adjust height to fill more space */
+    width: 100%;
+    height: auto;
+    max-height: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the container */
 }
 
 .drink-name {
@@ -201,7 +200,6 @@
     border-top: 2px solid rgb(187, 171, 67);
     border-bottom: 2px solid rgb(187, 171, 67);
     align-self: center;
-    /* Center the drink name horizontally */
 }
 
 .drinkInstr {
@@ -211,23 +209,16 @@
     border-top: 2px solid rgb(187, 171, 67);
     border-bottom: 2px solid rgb(187, 171, 67);
     overflow-y: auto;
-    /* Enable vertical scroll */
     overflow-x: hidden;
-    /* Disable horizontal scroll */
     margin-top: 10px;
     padding: 10px;
     font-family: monospace;
     text-align: left;
-    /* Align text to the left */
     color: #ffffff;
     width: 100%;
-    /* Ensure it takes full width */
     box-sizing: border-box;
-    /* Include padding in height */
     white-space: normal;
-    /* Ensure text wraps */
     flex-grow: 1;
-    /* Allow the container to grow */
     text-align: center;
     align-content: center;
 }
@@ -245,9 +236,13 @@
     color: #ffffff;
     text-align: center;
     flex-grow: 1;
-    /* Allow the container to grow */
     margin: 10px 0;
+    white-space: normal;
     list-style: none;
+}
+
+.ingre {
+    font-weight: bold;
 }
 
 @media (max-width: 1200px) {

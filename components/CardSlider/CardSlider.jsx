@@ -44,12 +44,16 @@ const CardSlider = ({ cardData }) => {
                 </div>
                 <div className='card-back'>
                   <div className='drink-name'>{card.title}</div>
-                  <ul className='drinkIngre-details'>
-                    {Object.keys(card).filter(key => key.startsWith('strIngredient')).map(key => (
-                      <li key={key}>{card[key]} - {card[`strMeasure${key.slice(-1)}`]}</li>
+                  <div className='drinkIngre-details'>
+                    {Object.keys(card).filter(key => key.startsWith('strIngredient')).map((key, idx) => (
+                      <div key={key}>
+                        <span className="ingredient-measure">◌ <span className='ingre'>{card[`strMeasure${idx + 1}`]}</span> {card[key]} ◌</span>
+                      </div>
                     ))}
-                  </ul>
-                  <p className='drinkInstr'>{card.description}</p>
+                  </div>
+                  <div className='drinkInstr'>
+                    <p>{card.description}</p>
+                  </div>
                 </div>
               </div>
             </div>
