@@ -107,3 +107,10 @@
     box-shadow: 0 0 15px rgba(43, 45, 66, 1);
 }
 
+@media (max-width: 725px) {
+    .buildBy-titles {
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+        line-height: 1.5;
+    }
+}

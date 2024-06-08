@@ -220,6 +220,11 @@
       width: 100%;
       padding: 15px 0;
     }
+    .package-titles {
+      font-size: 1.2rem;
+      letter-spacing: 0.3rem;
+      line-height: 1.5;
+  }
   }
   
   @media (max-width: 425px) {
@@ -241,6 +246,11 @@
       font-size: 0.9rem;
       padding: 10px 0;
     }
+    .package-titles {
+      font-size: 1.2rem;
+      letter-spacing: 0.3rem;
+      line-height: 1.5;
+  }
   }
   
   @media (max-width: 375px) {
