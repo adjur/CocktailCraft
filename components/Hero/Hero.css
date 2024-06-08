@@ -117,7 +117,7 @@
     align-items: center;
     border-radius: 10px;
     padding: 15px;
-    transition: transform 0.8s, background-color 0.3s;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
     cursor: pointer;
 }
 
@@ -132,8 +132,9 @@
 }
 
 .hero-arrow-icon {
-    font-size: 3rem !important; /* Increase the font size to make the arrow larger */
-    transition: transform 0.8s;
+    font-size: 3rem !important; /* Ensure the font size is applied */
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 .arrowLabel {
@@ -155,32 +156,7 @@
 
 /* Enlarge on hover */
 .hero-arrowContainer:hover .hero-arrow-icon {
-    transform: scale(1.8);
-}
-
-@media (max-width: 1000px) {
-
-    #titles {
-        font-size: 1.5rem;
-        letter-spacing: 0.4rem;
-        line-height: 2.5;
-    }
-
-    .intro {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-
-    .bodyCard {
-        width: 90%;
-        padding: 10px;
-    }
-
-    #titles-div {
-        width: 80%;
-        padding: 10px;
-
-    }
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
