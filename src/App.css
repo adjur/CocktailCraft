@@ -6,22 +6,31 @@
 
 #root {
   background-color: #2B2D42;
-} 
+}
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
-/* body {
-  min-height: 100vh;
-} */
-
 html {
   scroll-behavior: smooth;
-} 
+}
 
-*, *::before, *::after {
+/* .scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+} */
+
+/* *,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */

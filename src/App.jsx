@@ -1,5 +1,4 @@
 import './App.css'
-// import NavBar from '../components/NavBar/NavBar'
 import Hero from '../components/Hero/Hero'
 import BuildBy from '../components/BuildBy/BuildBy'
 import Cod from '../components/Cod/Cod'
@@ -13,11 +12,10 @@ function App() {
 
   return (
     <>
-      {/* <NavBar /> */}
       <Hero />
       <BuildBy />
       <Cod />
-      <CardSlider cardData={cardData}/> 
+      <CardSlider cardData={cardData} />
       <Packages />
       <Footer />
     </>
