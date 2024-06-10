@@ -1,7 +1,7 @@
 .buildBy {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(43, 45, 66, 1);
+    background-color: #2B2D42;
     display: flex;
     flex-direction: column;
     border: 2px solid aqua;
@@ -78,34 +78,6 @@
 
 }
 
-.alcohol-list {
-    margin-top: 20px;
-    list-style: none;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.alcohol-type {
-    font-size: 1rem;
-    font-family: monospace;
-    color: white;
-    letter-spacing: 1px;
-    font-weight: 400;
-    line-height: 1;
-    padding: 10px;
-    border-bottom: 2px solid rgb(187, 171, 67);
-    overflow: hidden;
-    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-}
-
-.alcohol-type:hover {
-    transform: scale(1.05);
-    border-color: rgba(187, 171, 67, 1);
-    box-shadow: 0 0 15px rgba(43, 45, 66, 1);
-}
-
 .results-card {
     background-color: rgba(43, 45, 46, 0.5);
     backdrop-filter: blur(4px);
@@ -116,8 +88,8 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    width: 80%;
-    height: 80%;
+    width: 95%;
+    height: 70%;
     max-width: 1800px;
     margin: 20px auto;
 }
@@ -144,11 +116,83 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
     width: 45%;
     height: 95%;
 }
+
+.searchByLabel {
+    font-family: monospace;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
+    align-self: center;
+}
+
+.search-input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+.fetch-recipes-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    background-color: rgb(187, 171, 67);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    max-width: 300px;
+}
+
+.fetch-recipes-button:hover {
+    background-color: rgb(187, 171, 67, .7);
+}
+
+.fetch-recipes-button:active {
+    transform: translateY(2px);
+}
+
+
+.cocktail-list {
+    width: 100%;
+    max-height: 90%;
+    overflow-y: auto;
+    margin-top: 20px;
+    font-family: monospace;
+    line-height: 1.5;
+    font-size: .9rem;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+
+.cocktail-list p:hover {
+    transform: scale(1.06);
+}
+
 .right-side-card {
     background-color: rgba(141, 153, 174, 1);
     backdrop-filter: blur(4px);
@@ -157,16 +201,174 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 20px;
     width: 45%;
     height: 95%;
+    overflow-y: auto;
 }
 
-@media (max-width: 725px) {
-    .buildBy-titles {
+.right-drinkName {
+    font-family: monospace;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
+    align-self: center;
+}
+
+.drinkThumb {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.drink-ingredients,
+.cocktail-instructions {
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: monospace;
+    letter-spacing: .2rem;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    border-top: 2px solid rgb(187, 171, 67);
+    border-bottom: 2px solid rgb(187, 171, 67);
+    margin: 10px 0;
+    overflow-y: auto;
+}
+
+@media (max-width: 992px) {
+    .buildBy-titles-div {
+        width: 90%;
+    }
+
+    .buildBy-detailsParagraph {
+        width: 90%;
+    }
+
+    .buildBy-titles,
+    .buildBy-package-details,
+    .searchByLabel {
         font-size: 1.2rem;
-        letter-spacing: 0.3rem;
-        line-height: 1.5;
+    }
+
+    .results-layer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .results-card {
+        height: 80%;
+    }
+
+    .right-side-card,
+    .left-side-card {
+        height: auto;
+        overflow: auto;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .results-layer {
+        flex-direction: column;
+    }
+    .results-card {
+        height: 70%;
+    }
+    .results-layer {
+        height: 100%;
+    }
+
+    .left-side-card,
+    .right-side-card {
+        width: 100%;
+        height: 60%;
+        overflow: auto;
+    }
+
+    .buildBy-titles-div,
+    .buildBy-detailsParagraph {
+        width: 95%;
+    }
+
+    .buildBy-package-details,
+    .searchByLabel {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
+
+
+    .search-input,
+    .fetch-recipes-button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .drinkThumb {
+        max-height: 250px;
+    }
+
+    .results-card,
+    .results-layer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buildBy-titles,
+    .buildBy-layer1 {
+        font-size: 0.9rem;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+    .buildBy-package-details,
+    .searchByLabel {
+        font-size: 0.9rem;
+    }
+
+    .left-side-card,
+    .right-side-card {
+        padding: 15px;
+        height: auto;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .results-card {
+        height: 65%;
+    }
+
+    .fetch-recipes-button,
+    .search-input {
+        max-width: 100%;
+    }
+
+    .drink-ingredients,
+    .cocktail-instructions {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .results-card {
+        height: 60%;
     }
 }

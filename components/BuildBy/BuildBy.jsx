@@ -29,7 +29,9 @@ const BuildBy = () => {
   return (
     <section id='BuildBy' className='buildBy'>
       <div className='buildBy-titles-div'>
-        <h2 className='buildBy-titles'>Work With What You Have</h2>
+        <div className='buildBy-layer1'>
+          <h2 className='buildBy-titles'>Work With What You Have</h2>
+        </div>
       </div>
       <div className='buildBy-detailsParagraph'>
         <p className='buildBy-package-details'>
