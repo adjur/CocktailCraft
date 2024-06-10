@@ -23,15 +23,9 @@ const Hero = () => {
             <p></p>
             <p className='intro'>Explore our exclusive packages that include everything you need to craft exquisite cocktails.
             </p>
+            <p><a href='#BuildBy'><ArrowDownwardIcon className='startArrow' /></a></p>
           </div>
         </div>
-      </div>
-      <div className='hero-arrowSection'>
-        <a href='#BuildBy' className='hero-arrowContainer'>
-          <div className='hero-arrowIcon'>
-            <ArrowDownwardIcon className='hero-arrow-icon' />
-          </div>
-        </a>
       </div>
     </section >
   );

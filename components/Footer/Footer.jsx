@@ -40,7 +40,7 @@ const Footer = () => {
           <h3 className='footer-subtitle'>Contact Us</h3>
           <p>Email: info@cocktailcraft.com</p>
           <p>Phone: +1 234 567 890</p>
-          <p>Address: 123 Cocktail St, Mixology City, CA</p>
+          <p>Address: 123 Cocktail St, Mixology City, CA 12345</p>
         </div>
       </div>
       <div className='footer-bottom'>

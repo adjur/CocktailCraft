@@ -93,70 +93,19 @@
     margin: 10px 0;
 }
 
-/* .Hero-arrow-container {
-    position: bottom;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+.startArrow {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: monospace;
+    letter-spacing: .2rem;
+    line-height: 3;
+    color: #ffffff;
     text-align: center;
-} */
-
-.hero-arrowSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.hero-arrowContainer {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    padding: 15px;
+    text-align: center;
+    margin: 10px 0;
     transition: transform 0.3s ease-in-out, background-color 0.3s;
     cursor: pointer;
-}
-
-.hero-arrowIcon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-decoration: none;
     animation: moveUpDown 4s infinite;
-}
-
-.hero-arrow-icon {
-    font-size: 3rem !important; /* Ensure the font size is applied */
-    transition: transform 0.3s ease-in-out;
-    margin-bottom: 10px;
-}
-
-.arrowLabel {
-    font-size: 1.25rem;
-    color: #ffffff;
-    margin-top: 5px;
-    font-family: monospace;
-}
-
-/* Keyframes for the slower move up and down animation */
-@keyframes moveUpDown {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-/* Enlarge on hover */
-.hero-arrowContainer:hover .hero-arrow-icon {
-    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
@@ -166,7 +115,8 @@
         line-height: 2;
     }
 
-    .intro {
+    .intro,
+    .startArrow {
         font-size: 1rem;
         line-height: 1.5;
     }
@@ -180,16 +130,6 @@
         width: 80%;
         padding: 10px;
     }
-
-    .icon {
-        font-size: 2.5rem;
-        /* Adjusted icon size for smaller screens */
-    }
-
-    .arrowLabel {
-        font-size: 1rem;
-        /* Adjusted label size for smaller screens */
-    }
 }
 
 @media (max-width: 480px) {
@@ -199,7 +139,8 @@
         line-height: 1.5;
     }
 
-    .intro {
+    .intro,
+    .startArrow {
         font-size: 0.9rem;
         letter-spacing: 0.1rem;
         line-height: 1.2;
@@ -220,42 +161,34 @@
         padding: 15px;
     }
 
-    .icon {
-        font-size: 2rem;
-        /* Adjusted icon size for smallest screens */
+}
+
+@media (max-width: 380px) {
+    #titles {
+        font-size: 1rem;
+        letter-spacing: 0.4rem;
+        line-height: 1.5;
     }
 
-    .arrowLabel {
-        font-size: 0.85rem;
-        /* Adjusted label size for smallest screens */
+    .intro,
+    .startArrow {
+        font-size: 0.9rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.2;
     }
 
-    @media (max-width: 380px) {
-        #titles {
-            font-size: 1rem;
-            letter-spacing: 0.4rem;
-            line-height: 1.5;
-        }
+    .bodyCard {
+        width: 95%;
+        padding: 10px;
+    }
 
-        .intro {
-            font-size: 0.9rem;
-            letter-spacing: 0.1rem;
-            line-height: 1.2;
-        }
+    #titles-div {
+        width: 95%;
+    }
 
-        .bodyCard {
-            width: 95%;
-            padding: 10px;
-        }
-
-        #titles-div {
-            width: 95%;
-        }
-
-        .layer1,
-        .layer2 {
-            width: 100%;
-            padding: 5px;
-        }
+    .layer1,
+    .layer2 {
+        width: 100%;
+        padding: 5px;
     }
 }

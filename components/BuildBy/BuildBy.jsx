@@ -8,8 +8,8 @@ const BuildBy = () => {
   const [cocktailRecipes, setCocktailRecipes] = useState([]);
 
   const alcohols = [
-    'Absinthe', 'Brandy', 'Cachaça', 'Cognac', 'Gin', 'Mezcal', 'Pisco', 
-    'Rum', 'Tequila', 'Vodka', 'Whiskey','Vermouth'
+    'Absinthe', 'Brandy', 'Cachaça', 'Cognac', 'Gin', 'Mezcal', 'Pisco',
+    'Rum', 'Tequila', 'Vodka', 'Whiskey', 'Vermouth'
   ];
 
   const toggleAlcoholSelection = (alcohol) => {
@@ -38,23 +38,12 @@ const BuildBy = () => {
       </div>
       <div className='buildBy-detailsParagraph'>
         <p className='buildBy-package-details'>
-          Filter through drinks based on the alcohol you have at home and find something spectacular!
+          Build a drink with the ingredients you have at home!
         </p>
         <div className='buildBy-body'>
-          <ul className='alcohol-list'>
-            {alcohols.map((alcohol, index) => (
-              <li 
-                key={index} 
-                className={`alcohol-type ${selectedAlcohols.includes(alcohol) ? 'selected' : ''}`} 
-                onClick={() => toggleAlcoholSelection(alcohol)}
-              >
-                {alcohol}
-              </li>
-            ))}
-          </ul>
-          <button className='fetch-recipes-button' onClick={fetchCocktailRecipes}>
+          {/* <button className='fetch-recipes-button' onClick={fetchCocktailRecipes}>
             Find Recipes
-          </button>
+          </button> */}
           {cocktailRecipes.length > 0 && (
             <div className='recipe-list'>
               <h3>Available Recipes</h3>
@@ -67,6 +56,21 @@ const BuildBy = () => {
               </ul>
             </div>
           )}
+        </div>
+      </div>
+      <div className='results-card'>
+        <div className='results-layer'>
+          <div className='left-side-card'>
+            <div>
+
+            </div>
+            <button className='fetch-recipes-button' onClick={fetchCocktailRecipes}>
+              Find Recipes
+            </button>
+          </div>
+          <div className='right-side-card'>
+
+</div>
         </div>
       </div>
     </section>
