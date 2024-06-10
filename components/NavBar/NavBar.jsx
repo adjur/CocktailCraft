@@ -127,7 +127,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ ml: 'auto', display: { xs: 'none', md: 'block' } }}>
+          {/* <Box sx={{ ml: 'auto', display: { xs: 'none', md: 'block' } }}>
             <TextField
               variant="outlined"
               placeholder="Search for cocktails..."
@@ -149,13 +149,13 @@ function ResponsiveAppBar() {
                   },
                   '&.Mui-focused fieldset': {
                     borderStyle: 'no border',
-                    borderColor: 'rgba(43, 45, 46, 0.5)', // Ensuring specificity is high enough
+                    borderColor: 'rgba(43, 45, 46, 0.5)',
                     borderWidth: '1px',
                     backgroundColor: 'rgba(43, 45, 46,)',
                   },
                   '&.Mui-focused': {
                     '& fieldset': {
-                      borderColor: 'rgba(43, 45, 46, 0.5)', // Ensuring specificity is high enough
+                      borderColor: 'rgba(43, 45, 46, 0.5)',
                       borderWidth: '2px',
                       backgroundColor: 'rgba(43, 45, 46,)',
                       color: '#ffffff',
@@ -164,7 +164,7 @@ function ResponsiveAppBar() {
                 }
               }}
             />
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

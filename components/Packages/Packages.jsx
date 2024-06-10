@@ -29,7 +29,7 @@ const Packages = () => {
               <li>◌ Easy-to-follow recipe cards for a selection of cocktails ◌</li>
             </ul>
             <p className='pack-description'>$60.00</p>
-            <a href="#" className="pack-button">Buy Package</a>
+            <a href="mailto: info@cocktailcraft.com" className="pack-button">Contact Us</a>
           </div>
         </div>
         <div className='pack pack2'>
@@ -42,7 +42,7 @@ const Packages = () => {
               <li>◌ Additional recipe cards featuring more cocktail options ◌</li>
             </ul>
             <p className='pack-description'>$80.00</p>
-            <a href="#" className="pack-button">Buy Package</a>
+            <a href="mailto: info@cocktailcraft.com" className="pack-button">Contact Us</a>
           </div>
         </div>
         <div className='pack pack3'>
@@ -55,7 +55,7 @@ const Packages = () => {
               <li>◌ An extensive collection of recipe cards for a wide variety of cocktails ◌</li>
             </ul>
             <p className='pack-description'>$120.00</p>
-            <a href="#" className="pack-button">Buy Package</a>
+            <a href="mailto: info@cocktailcraft.com" className="pack-button">Contact Us</a>
           </div>
         </div>
       </div>
