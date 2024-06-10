@@ -229,9 +229,9 @@
   
   @media (max-width: 425px) {
     .pack1 .pack-title {
-      font-size: 1rem; /* Smaller font size for smaller screens */
-      white-space: normal; /* Ensure text wraps properly */
-      word-wrap: break-word; /* Break long words if necessary */
+      font-size: 1rem;
+      white-space: normal;
+      word-wrap: break-word;
     }
     .pack-title {
       font-size: 1rem;
@@ -255,12 +255,12 @@
   
   @media (max-width: 375px) {
     .pack1 .pack-title {
-      font-size: 1rem; /* Smaller font size for smaller screens */
-      white-space: normal; /* Ensure text wraps properly */
-      word-wrap: break-word; /* Break long words if necessary */
+      font-size: 1rem;
+      white-space: normal;
+      word-wrap: break-word;
     }
     .pack {
-      padding: 10px; /* Adjust padding for smaller screens */
+      padding: 10px;
     }
     .pack-title {
       font-size: 0.9rem;
@@ -273,18 +273,18 @@
     }
     .pack-button {
       font-size: 0.8rem;
-      padding: 8px 0; /* Adjust padding for smaller screens */
+      padding: 8px 0;
     }
   }
   
   @media (max-width: 320px) {
     .pack1 .pack-title {
-      font-size: 0.9rem; /* Smaller font size for smaller screens */
-      white-space: normal; /* Ensure text wraps properly */
-      word-wrap: break-word; /* Break long words if necessary */
+      font-size: 0.9rem;
+      white-space: normal;
+      word-wrap: break-word;
     }
     .pack {
-      padding: 5px; /* Further adjust padding for the smallest screens */
+      padding: 5px;
     }
     .pack-title {
       font-size: 0.8rem;
@@ -297,7 +297,7 @@
     }
     .pack-button {
       font-size: 0.7rem;
-      padding: 5px 0; /* Further adjust padding for the smallest screens */
+      padding: 5px 0;
     }
   }
   
