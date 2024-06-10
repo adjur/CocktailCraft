@@ -284,4 +284,16 @@
     .scrollCard {
         width: 90%;
     }
+
+    .drink-name {
+        font-size: 1rem;
+    }
+
+    .card-back .drink-name {
+        font-size: 1rem;
+    }
+
+    .drinkIngre-details, .drinkInstr {
+        font-size: .8rem;
+    }
 }
