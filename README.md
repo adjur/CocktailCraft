@@ -1,12 +1,27 @@
-<<<<<<< HEAD
-# React + Vite
+# 🍹 Cocktail Craft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Visit the project live at:** [Cocktail Craft Live](https://cocktail-craft.vercel.app/)
 
-Currently, two official plugins are available:
+Welcome to Cocktail Craft, an interactive web application designed to elevate your cocktail-making experience. Whether you're planning a small gathering or a large party, Cocktail Craft helps you discover cocktail recipes based on the ingredients you have at hand. Additionally, we offer curated hosting packages to ensure you have everything you need for your event, excluding the alcohol.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# cocktailCraft
->>>>>>> f540b766d9795595cbe73c3ba232b2d976757a34
+## 🌟 Features
+
+- **🔍 Ingredient-Based Search**: Easily find cocktail recipes by entering an ingredient.
+- **📜 Recipe List**: Receive a comprehensive list of cocktails that can be made with your chosen ingredients.
+- **🎁 Hosting Packages**: Choose from various hosting packages that provide all necessary non-alcoholic ingredients and tools tailored to the size of your party.
+- **📱 Responsive Design**: Enjoy a seamless experience on any device, thanks to a mobile-first design approach.
+- **👆 Interactive UI**: Engage with an intuitive interface built with React and enhanced with state management to ensure a smooth user interaction.
+
+## 🛠 Technologies
+
+Cocktail Craft is built using the following technologies:
+
+- React (including React Hooks)
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- State Management with React's Context API
+
+## 🙌 Thank You
+
+Thank you for visiting and I hope you enjoy using it as much as I enjoyed creating it!
