@@ -7,7 +7,6 @@ import Packages from '../components/Packages/Packages'
 import Footer from '../components/Footer/Footer'
 import cardData from '../components/CardSlider/CardData'
 
-
 function App() {
 
   return (
