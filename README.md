@@ -2,7 +2,7 @@
 
 **Visit the project live at:** [Cocktail Craft Live](https://cocktail-craft.vercel.app/)
 
-Welcome to Cocktail Craft, an interactive web application designed to elevate your cocktail-making experience. Whether you're planning a small gathering or a large party, Cocktail Craft helps you discover cocktail recipes based on the ingredients you have at hand. Additionally, we offer curated hosting packages to ensure you have everything you need for your event, excluding the alcohol.
+Welcome to Cocktail Craft, an interactive web application designed to elevate your cocktail-making experience. Whether you're planning a small gathering or a large party, Cocktail Craft helps you discover cocktail recipes based on the ingredients you have at hand.
 
 ## 🌟 Features
 
